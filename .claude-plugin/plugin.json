@@ -1,0 +1,13 @@
+{
+  "name": "hovercode",
+  "version": "0.1.0",
+  "description": "QR codes from Claude: free static codes generated locally, plus dynamic QR codes with editable destinations, scan tracking and analytics, short links, PDF codes and landing pages via Hovercode.",
+  "author": {
+    "name": "Hovercode Ltd",
+    "url": "https://hovercode.com"
+  },
+  "homepage": "https://hovercode.com/api/",
+  "repository": "https://github.com/Hovercode-Ltd/hovercode-js",
+  "license": "MIT",
+  "keywords": ["qr-code", "dynamic-qr-code", "qr-code-generator", "short-links", "analytics"]
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "hovercode": {
+      "type": "http",
+      "url": "https://hovercode.com/mcp/"
+    }
+  }
+}

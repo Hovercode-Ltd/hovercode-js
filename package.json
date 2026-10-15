@@ -1,0 +1,100 @@
+{
+  "name": "hovercode",
+  "version": "0.1.0",
+  "description": "QR code generator for JavaScript and the command line. Free static QR codes (SVG/PNG, custom colors, dot styles, logos, WiFi/vCard), plus dynamic QR codes with scan tracking and editable destinations via the Hovercode API.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./node": {
+      "import": "./dist/node.js",
+      "require": "./dist/node.cjs"
+    },
+    "./react": {
+      "import": "./dist/react.js",
+      "require": "./dist/react.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "hovercode": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "skills",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc",
+    "test": "vitest run",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "keywords": [
+    "qr",
+    "qr-code",
+    "qrcode",
+    "qr-code-generator",
+    "dynamic-qr-code",
+    "qr-code-tracking",
+    "qr-code-analytics",
+    "svg",
+    "png",
+    "wifi-qr-code",
+    "vcard",
+    "short-links",
+    "url-shortener",
+    "cli",
+    "agent-skills",
+    "react",
+    "react-qr-code",
+    "hovercode"
+  ],
+  "homepage": "https://hovercode.com/api/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hovercode-Ltd/hovercode-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hovercode-Ltd/hovercode-js/issues"
+  },
+  "author": "Hovercode Ltd (https://hovercode.com)",
+  "license": "MIT",
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  },
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "2.6.2",
+    "@types/node": "22.10.2",
+    "@types/pngjs": "6.0.5",
+    "@types/qrcode": "1.5.5",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@zxing/library": "^0.21.3",
+    "jsqr": "^1.4.0",
+    "pngjs": "7.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tsup": "8.3.5",
+    "typescript": "5.6.3",
+    "vitest": "2.1.8"
+  }
+}

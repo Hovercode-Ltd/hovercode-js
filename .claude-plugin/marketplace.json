@@ -1,0 +1,15 @@
+{
+  "name": "hovercode",
+  "description": "Hovercode's official plugins: QR codes, short links and scan analytics.",
+  "owner": {
+    "name": "Hovercode Ltd",
+    "url": "https://hovercode.com"
+  },
+  "plugins": [
+    {
+      "name": "hovercode",
+      "source": "./",
+      "description": "Create static and dynamic QR codes, short links and scan analytics with Hovercode."
+    }
+  ]
+}
